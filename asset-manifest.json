@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e3baff13.chunk.css",
+    "main.js": "/static/js/main.ea81f0bf.chunk.js",
+    "main.js.map": "/static/js/main.ea81f0bf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.bd942c46.js",
+    "runtime-main.js.map": "/static/js/runtime-main.bd942c46.js.map",
+    "static/css/2.cc77c331.chunk.css": "/static/css/2.cc77c331.chunk.css",
+    "static/js/2.aa1ccf06.chunk.js": "/static/js/2.aa1ccf06.chunk.js",
+    "static/js/2.aa1ccf06.chunk.js.map": "/static/js/2.aa1ccf06.chunk.js.map",
+    "static/js/3.79989b14.chunk.js": "/static/js/3.79989b14.chunk.js",
+    "static/js/3.79989b14.chunk.js.map": "/static/js/3.79989b14.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.cc77c331.chunk.css.map": "/static/css/2.cc77c331.chunk.css.map",
+    "static/css/main.e3baff13.chunk.css.map": "/static/css/main.e3baff13.chunk.css.map",
+    "static/js/2.aa1ccf06.chunk.js.LICENSE.txt": "/static/js/2.aa1ccf06.chunk.js.LICENSE.txt",
+    "static/media/footer.scss": "/static/media/back.5e61ba70.png",
+    "static/media/Layer 17.d877dcb7.svg": "/static/media/Layer 17.d877dcb7.svg",
+    "static/media/Layer 18.5642e1be.svg": "/static/media/Layer 18.5642e1be.svg",
+    "static/media/Layer 19@1X.7034b5e2.png": "/static/media/Layer 19@1X.7034b5e2.png",
+    "static/media/Layer 20.af0dd8d7.svg": "/static/media/Layer 20.af0dd8d7.svg",
+    "static/media/bit.ff49c949.png": "/static/media/bit.ff49c949.png",
+    "static/media/carroad.de27afc2.jpg": "/static/media/carroad.de27afc2.jpg",
+    "static/media/ .b680b18f.svg": "/static/media/ .b680b18f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd942c46.js",
+    "static/css/2.cc77c331.chunk.css",
+    "static/js/2.aa1ccf06.chunk.js",
+    "static/css/main.e3baff13.chunk.css",
+    "static/js/main.ea81f0bf.chunk.js"
+  ]
+}
