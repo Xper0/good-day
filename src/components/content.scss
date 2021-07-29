@@ -1,0 +1,193 @@
+@import "uikit";
+
+.content{
+  background: #FFFFFF;
+  text-align: center;
+  .content__proff{
+    width: 100%;
+    position: relative;
+    min-height: 287px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    //transform: translateX(-100px);
+    transform: translateX(0);
+    opacity: 1;
+    &:nth-child(odd):before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.1;
+      background: $colortextsecond;
+      z-index: 2;
+    }
+
+    .cotentent-header{
+      display: flex;
+
+       @media (max-width: 700px){
+         display: flex;
+         flex-wrap: wrap;
+         //justify-content: center;
+         //align-content: center;
+       }
+      @media (max-width: 300px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+      }
+      .content-header__desc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 99;
+        margin-right: 40px;
+        overflow-wrap: break-word;
+        .content-header__img{
+          width: 100%;
+          img{
+            width: 100%;
+            height: 300px;
+            background-position: center;
+            @media  (max-width: 700px){
+              width: auto;
+            }
+          }
+        }
+
+        .content-header__h2{
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-family: OpenSans-Semibold;
+          margin-top: 32px;
+          margin-bottom: 20px;
+        }
+        .content-header__title{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          //flex: 0 1 auto;
+          h2{
+            margin-left: 10px;
+          }
+        }
+        .title-left{
+          text-align: left;
+          margin-left: 25px;
+        }
+        .content-header__line:before{
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: 60%;
+          height: 3px;
+          margin: 0 32px 0 32px;
+          background-color: #293139;
+          opacity: 0.3;
+
+        }
+        .content-header__p{
+          text-align: left;
+          width: 100%;
+          padding: 0 15px 0 25px;
+          overflow-wrap: break-word;
+          font-family: OpenSans-Semibold;
+          letter-spacing: 1px;
+          font-size: $sizeText;
+          @media  (max-width: 700px){
+            text-align: center;
+            font-size: 20px;
+          }
+
+        }
+        .content-header__btn{
+          width: 99px;
+          height: 36px;
+          border-radius: 30px;
+          background: $backgroundBtn;
+          color: $colortext;
+          font-family: OpenSans-Semibold;
+          border: none;
+          margin: 30px 0 70px 25px;
+          cursor: pointer;
+          &:hover{
+            background: cadetblue;
+            color: black;
+          }
+          @media  (max-width: 700px){
+          width: 350px;
+          margin: 50px auto;
+          font-size: 20px;
+        }
+
+        }
+        .bnt-ground{
+          background: #D2D5DA;
+        }
+        .btn-none{
+          background: transparent;
+          color: #50C3AF;
+          width: 110px;
+          margin: 30px 0 70px 15px;
+          @media  (max-width: 700px){
+            width: 350px;
+            margin: 50px auto;
+            font-size: 20px;
+          }
+        }
+
+      }
+      .content-header__desc > img {
+        width: 267px;
+        height: 170px;
+        background-size: cover;
+
+      }
+      .professionals-content{
+        padding: 5px;
+      }
+      .responsive{
+        padding-top: 64px;
+      }
+      .row{
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        margin: 30px 0 39px 0;
+        .content-header__img{
+          width: auto;
+          min-height: 200px;
+        }
+        @media  (max-width: 700px){
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .margin{
+        margin: 0;
+        .content-header__h2{
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  //.active{
+  //  transform: translateX(0px);
+  //  opacity: 1;
+  //}
+
+  .content__proff:nth-child(2),
+  .content__proff:nth-child(4),
+  .content__proff:nth-child(6)
+  {
+    background: #FFFFFF;
+  }
+
+
+}

@@ -1,0 +1,133 @@
+@import "uikit";
+@font-face {
+  font-family: "BelindaRegular";
+  src: url("../font/BelindaRegular.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../font/Myriad Pro Regular.otf");
+  font-weight: 900;
+}
+
+.header{
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/back.png") center ;
+  background-size: cover;
+  width: 100%;
+  height: 570px;
+  z-index: 3;
+  font-family: OpenSans-Semibold;
+
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background: #101929;
+    z-index: 2;
+  }
+
+  .header__content{
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+
+    .header-logo{
+      margin-top: 65px;
+
+      .header__text{
+        color: $colortext;
+        font-size: 52px;
+        font-family: BelindaRegular, fantasy  ;
+        font-weight: 900;
+      }
+    }
+
+    .header-nav {
+      margin-bottom: 79px;
+
+      .nav__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+
+        .nav__item {
+          color: $colortext;
+          font-size: 13px;
+          padding: 20px;
+          cursor: pointer;
+          border-radius: 10px;
+
+          &:hover {
+            background: $backgroundBtn;
+            box-shadow: 1px 14px 21px 9px #000;
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+
+    .header-info{
+
+      .header-info__title{
+        color: $colortext;
+        font-size: 53px;
+        letter-spacing: 3px;
+        margin: 0;
+        padding: 0;
+        filter: drop-shadow(22px 12px 10px #000);
+      }
+      .header-info__desc{
+        color: $colortext;
+        font-size: 15px;
+        margin: 43px 0 0 0;
+        padding: 0;
+        &:before,
+        &:after{
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 102px;
+        height: 3px;
+        margin: 0 32px 4px 32px;
+        background-color: #FFFFFF;
+        opacity: 0.3;
+      }
+      }
+    }
+
+    .header-control{
+      margin-top: 82px;
+      margin-bottom: 120px;
+
+      .header-control__btn{
+        width: 236px;
+        height: 49px;
+        border-radius: 50px;
+        background: $backgroundBtn;
+        color: $colortext;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+
+        &:hover{
+          background: cadetblue;
+          color: black;
+        }
+      }
+    }
+  }
+}

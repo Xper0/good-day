@@ -1,0 +1,94 @@
+@import "uikit";
+@import "header";
+@font-face {
+  font-family: "Nexa";
+  src: url("../font/Nexa-Regular.ttf");
+}
+@font-face {
+  font-family: "Cabin";
+  src: url("../font/Cabin-Regular.otf");
+}
+.footer{
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: $backgroundBtn;
+    min-height: 222px;
+    .footer__title{
+      .footer__h2{
+        color: $colortext;
+        font-size: 15px;
+        font-family: OpenSans-Semibold;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+      }
+    }
+    .footer__sponsors{
+      color: $colortext;
+      font-size: 26px;
+      span{
+        margin: 40px;
+      };
+      .Belinda{
+        font-family: "BelindaRegular";
+      }
+      .NexaRegular{
+        font-family: Nexa;
+      }
+      .Cabin-Regular{
+        font-family: Cabin;
+      }
+      .NexaHeavy{
+        font-family: Nexa;
+      }
+    }
+
+  }
+  .footer__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+
+    .footer__copyright {
+      padding: 24px 0;
+      span{
+        color: #787B80;
+      }
+    }
+    .footer__social{
+      svg{
+        margin: 5px;
+        cursor: pointer;
+        &:hover{
+          fill: #50C3AF;
+          transform: scale(1.2);
+        }
+      }
+
+    }
+    #back2Top {
+      width: 70px;
+      line-height: 40px;
+      overflow: hidden;
+      z-index: 999;
+      //display: none;
+      cursor: pointer;
+      transform: rotate(270deg);
+      position: fixed;
+      bottom: 50px;
+      right: 0;
+      background-color: #DDD;
+      color: #555;
+      text-align: center;
+      font-size: 30px;
+      text-decoration: none;
+      &:hover{
+      background-color: #DDF;
+      color: #000;
+    }
+    }
+  }
+}
